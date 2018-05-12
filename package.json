@@ -7,12 +7,15 @@
     "node": ">=4.2.4"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "author": "Anell Kumarr Beeram <anellkumarrbeeram@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "istanbul": "^0.4.5",
     "mocha": "^5.1.1"
   }
 }
