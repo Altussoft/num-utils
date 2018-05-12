@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg)](https://coveralls.io/github/akbeeram/num-utils)
+
 # num-utils
 
 A small and simple library for number utility functions
