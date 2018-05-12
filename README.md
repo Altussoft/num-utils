@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/akbeeram/num-utils.svg?branch=master)](https://travis-ci.org/akbeeram/num-utils)
 [![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg)](https://coveralls.io/github/akbeeram/num-utils)
+[![GitHub license](https://img.shields.io/github/license/akbeeram/num-utils.svg)](https://github.com/akbeeram/num-utils/master/LICENSE)
 
 # num-utils
 

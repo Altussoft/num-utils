@@ -11,7 +11,7 @@
     "cover": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "author": "Anell Kumarr Beeram <anellkumarrbeeram@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
     "coveralls": "^3.0.1",
