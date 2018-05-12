@@ -47,6 +47,13 @@ describe('#num-utils', function() {
         result = nu.isDivisibleBy4(30);
         expect(result).to.be.false;
     });
+    it('should identify if a given number is divisible by 5', function() {
+        var result = nu.isDivisibleBy5(25);
+        expect(result).to.be.true;
+
+        result = nu.isDivisibleBy5(32);
+        expect(result).to.be.false;
+    });
     it('should identify if a input number is divisible by another number', function() {
         var result = nu.isDivisibleBy(64, 8);
         expect(result).to.be.true;
