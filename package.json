@@ -1,0 +1,14 @@
+{
+  "name": "num-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anell Kumarr Beeram <anellkumarrbeeram@gmail.com>",
+  "license": "ISC"
+}
