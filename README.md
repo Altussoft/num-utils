@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/akbeeram/num-utils.svg?branch=master)](https://travis-ci.org/akbeeram/num-utils)
-[![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg?branch=master)](https://coveralls.io/github/akbeeram/num-utils)
+[![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg?branch=master)](https://coveralls.io/github/akbeeram/num-utils?branch=master)
 [![GitHub license](https://img.shields.io/github/license/akbeeram/num-utils.svg)](https://github.com/akbeeram/num-utils/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/num-utils.svg)](https://badge.fury.io/js/num-utils)
 <!--[![GitHub release](https://img.shields.io/github/release/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/releases/) -->
@@ -19,10 +19,22 @@ A small and simple library for number utility functions
 ## Usage
 
     var nu = require('num-utils');
-    console.log(nu.isEven(3));
+    nu.isEven(3); // => false
 
-    Output:
-    false
+    nu.isNegative(-5); // => true
+
+### Divisibility Functions
+
+    nu.isDivisibleBy3(5); // => false
+    nu.isDivisibleBy3(27); // => true
+
+    nu.isDivisibleBy(22, 4); // => false
+
+### Range Functions
+
+    nu.isInRange(10, 2, 23); // => true
+    nu.isInRangeMinInc(4, 4, 9); // => true
+
 ## Tests
 
     npm test
