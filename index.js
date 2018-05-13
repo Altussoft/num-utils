@@ -160,6 +160,41 @@ function sortDesc(input) {
     }
     return temp;
 }
+function reverseNumber(input) {
+    var i = input + '';
+    i = i.split('').reverse().join('');
+    return parseInt(i, 10);
+}
+function countDuplicates(inputArr) {
+    if(arguments.length ===1 && Array.isArray(inputArr)) {
+        return count(inputArr);
+    } else {
+        return count(Array.from(arguments));
+    }
+    function count(arr) {
+        var result = {};
+        for(var i=0;i<arr.length;i++) {
+          for(var j=0;j<i;j++) {
+            if(arr[i]===arr[j]) {
+              if(result[arr[j]]){
+                result[arr[j]]++;
+              } else {
+                result[arr[j]] = 2;
+              }
+              break;
+            }
+          }
+        }
+        return result;
+    }
+}
+function getRandomNumberWithLength(len){
+    var number = '';
+    for(var i=0;i<len;i++){
+        number += getRandomInRange(0, 9);
+    }
+    return parseInt(number, 10);
+}
 module.exports = {
     isEven: isEven,
     isOdd: isOdd,
@@ -182,5 +217,8 @@ module.exports = {
     sumOfSquares: sumOfSquares,
     sumOfCubes: sumOfCubes,
     sortAsc: sortAsc,
-    sortDesc: sortDesc
+    sortDesc: sortDesc,
+    reverseNumber: reverseNumber,
+    countDuplicates: countDuplicates,
+    getRandomNumberWithLength: getRandomNumberWithLength
 }

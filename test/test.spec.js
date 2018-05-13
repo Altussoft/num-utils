@@ -149,4 +149,19 @@ describe('#num-utils', function() {
         var result = nu.sortDesc([23, 8, 12, 54]);
         expect(result).to.deep.equal([ 54, 23, 12, 8 ]);
     });
+    it('should reverse the digits in a given number', function() {
+        var result = nu.reverseNumber(123456789);
+        expect(result).to.equal(987654321);
+    });
+    it('should return the count of duplicates in the given array or list of arguments', function() {
+        var result = nu.countDuplicates([1,1,2,2,2,3,3,4,5,5,5,6,6,6,7,7,8]);
+        expect(result).to.deep.equal({ '1': 2, '2': 3, '3': 2, '5': 3, '6': 3, '7': 2 });
+
+        var result = nu.countDuplicates(1,1,2,2,2,3,3,4,5,5,5,6,6,6,7,7,8);
+        expect(result).to.deep.equal({ '1': 2, '2': 3, '3': 2, '5': 3, '6': 3, '7': 2 });
+    });
+    it('should generate a number with specified numberof digits', function() {
+        var result = nu.getRandomNumberWithLength(3);
+        expect(result.toString()).to.be.lengthOf(3);
+    });
 });

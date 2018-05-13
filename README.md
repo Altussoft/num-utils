@@ -67,6 +67,8 @@ A small and simple library for number utility functions
 **Other Calculation Functions**
 
 ```javascript
+    nu.getRandomNumberWithLength(3); // => 184
+    nu.countDuplicates([1,1,2,2,2,3,3,4,5,5,5,6,6,6,7,7,8]); // => { '1': 2, '2': 3, '3': 2, '5': 3, '6': 3, '7': 2 }
     nu.isPythagoreanTriplets(6, 8 ,10); // => true
     nu.hasIntSquareRoot(20); // => false
 ```
