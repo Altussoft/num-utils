@@ -98,12 +98,22 @@ describe('#num-utils', function() {
 
         result = nu.sumOfNumbers(5);
         expect(result).to.equal(15);
+
+        result = nu.sumOfNumbers(5,10);
+        expect(result).to.equal(45);
     });
     it('should identify if a given set of 3 numbers are Pythagorean Triplets', function() {
         var result = nu.isPythagoreanTriplets(6, 8 ,10);
         expect(result).to.be.true;
 
         var result = nu.isPythagoreanTriplets(6, 8 ,12);
+        expect(result).to.be.false;
+    });
+    it('should identify if a number has an integer square root', function() {
+        var result = nu.hasIntSquareRoot(25);
+        expect(result).to.be.true;
+
+        var result = nu.hasIntSquareRoot(20);
         expect(result).to.be.false;
     });
 });

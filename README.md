@@ -46,6 +46,21 @@ A small and simple library for number utility functions
     nu.isInRangeMinInc(4, 4, 9); // => true
 ```
 
+**Mathematical Functions**
+
+```javascript
+    nu.sumOfNumbers(5); // => 15
+    nu.sumOfNumbers([1,2,3,4]); // => 10
+    nu.sumOfNumbers(5,10); // => 45
+    nu.calcAverage([1,2,3,4,5]); // => 3
+```
+
+**Other Calculation Functions**
+
+```javascript
+    nu.isPythagoreanTriplets(6, 8 ,10); // => true
+    nu.hasIntSquareRoot(20); // => false
+```
 ## Tests
 
     npm test

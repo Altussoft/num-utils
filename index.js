@@ -33,18 +33,24 @@ function calcAverage(inputArr) {
     //     throw 'calcAverage input must be an array of numbers';
     }
 }
-function sumOfNumbers(input) {
+function sumOfNumbers(n1, n2) {
     var result = 0;
-    if(Array.isArray(input)) {
-        input.forEach(function(item, idx) {
-            result += item;
-        });
-    } else if(Number.isInteger(input)) {
-        for(var i  = 0 ; i <= input ; i++) {
+    if(arguments.length === 2) {
+        for(var i  = n1 ; i <= n2 ; i++) {
             result += i;
         }
-    // } else {
-    //     throw 'sumOfNumbers input must be either anarray of numbers or an integer'
+    } else {
+        if(Array.isArray(n1)) {
+            n1.forEach(function(item, idx) {
+                result += item;
+            });
+        } else if(Number.isInteger(n1)) {
+            for(var i  = 0 ; i <= n1 ; i++) {
+                result += i;
+            }
+        // } else {
+        //     throw 'sumOfNumbers input must be either anarray of numbers or an integer'
+        }
     }
     return result;
 }
@@ -57,6 +63,9 @@ function isPythagoreanTriplets(a, b, c) {
         sum += Math.pow(item, 2);
     });
     return Math.pow(max, 2) === sum;
+}
+function hasIntSquareRoot(input) {
+    return Number.isInteger(Math.sqrt(input));
 }
 function isEven(input) {
     return input%2 === 0;
@@ -102,5 +111,6 @@ module.exports = {
     isInRangeMaxInc: isInRangeMaxInc,
     calcAverage: calcAverage,
     sumOfNumbers: sumOfNumbers,
-    isPythagoreanTriplets: isPythagoreanTriplets
+    isPythagoreanTriplets: isPythagoreanTriplets,
+    hasIntSquareRoot: hasIntSquareRoot
 }
