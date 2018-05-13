@@ -1,3 +1,11 @@
+'use strict';
+
+/**
+ * Collection of number utility functions
+ * https://github.com/akbeeram/num-utils
+ * @copyright akbeeram
+ * @license MIT
+ */
 /**
  * Function to check if a number is within range,
  * by default min and max range limits included
