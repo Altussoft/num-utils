@@ -2,10 +2,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg?branch=master)](https://coveralls.io/github/akbeeram/num-utils?branch=master)
 [![GitHub license](https://img.shields.io/github/license/akbeeram/num-utils.svg)](https://github.com/akbeeram/num-utils/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/num-utils.svg)](https://badge.fury.io/js/num-utils)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react.svg)](https://www.npmjs.com/package/num-utils)
-[![node](https://img.shields.io/node/v/passport.svg)](https://www.npmjs.com/package/num-utils)
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/num-utils)
-[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/num-utils)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/num-utils.svg)](https://www.npmjs.com/package/num-utils)
+[![node](https://img.shields.io/node/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
+[![npm](https://img.shields.io/npm/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
+[![npm](https://img.shields.io/npm/dt/num-utils.svg)](https://www.npmjs.com/package/num-utils)
 <!--[![GitHub release](https://img.shields.io/github/release/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/releases/) -->
 [![GitHub contributors](https://img.shields.io/github/contributors/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/graphs/contributors/)
 [![GitHub issues](https://img.shields.io/github/issues/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues/)
@@ -55,6 +55,7 @@ A small and simple library for number utility functions
     nu.sumOfNumbers([1,2,3,4]); // => 10
     nu.sumOfNumbers(5,10); // => 45
     nu.calcAverage([1,2,3,4,5]); // => 3
+    
     nu.sumOfSquares(2, 3, 4); // => 29
     nu.sumOfSquares([1, 2, 3, 4]); // => 30
     nu.sumOfCubes(2, 3, 4); // => 99
