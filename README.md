@@ -9,6 +9,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/pull/)
+[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)](https://github.com/akbeeram/num-utils)
 
 # num-utils
 
