@@ -48,6 +48,16 @@ function sumOfNumbers(input) {
     }
     return result;
 }
+function isPythagoreanTriplets(a, b, c) {
+    var inputArr = [a, b, c];
+    var max = Math.max(a, b, c);
+    inputArr.splice(inputArr.indexOf(max), 1);
+    var sum = 0;
+    inputArr.forEach(function(item, idx) {
+        sum += Math.pow(item, 2);
+    });
+    return Math.pow(max, 2) === sum;
+}
 function isEven(input) {
     return input%2 === 0;
 }
@@ -91,5 +101,6 @@ module.exports = {
     isInRangeMinInc: isInRangeMinInc,
     isInRangeMaxInc: isInRangeMaxInc,
     calcAverage: calcAverage,
-    sumOfNumbers: sumOfNumbers
+    sumOfNumbers: sumOfNumbers,
+    isPythagoreanTriplets: isPythagoreanTriplets
 }

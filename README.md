@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/akbeeram/num-utils.svg?branch=master)](https://travis-ci.org/akbeeram/num-utils)
-[![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg)](https://coveralls.io/github/akbeeram/num-utils)
+[![Coverage Status](https://coveralls.io/repos/github/akbeeram/num-utils/badge.svg?branch=master)](https://coveralls.io/github/akbeeram/num-utils?branch=master)
 [![GitHub license](https://img.shields.io/github/license/akbeeram/num-utils.svg)](https://github.com/akbeeram/num-utils/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/num-utils.svg)](https://badge.fury.io/js/num-utils)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react.svg)](https://www.npmjs.com/package/num-utils)
