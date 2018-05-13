@@ -9,9 +9,9 @@
 /**
  * Function to check if a number is within range,
  * by default min and max range limits included
- * @param {*} input 
- * @param {*} min 
- * @param {*} max 
+ * @param {Number} input 
+ * @param {Number} min 
+ * @param {Number} max 
  */
 function isInRange(input, min, max) {
     return input <= max && input >= min;
@@ -24,6 +24,29 @@ function isInRangeMinInc(input, min, max) {
 }
 function isInRangeMaxInc(input, min, max) {
     return input <= max && input > min;
+}
+function calcAverage(inputArr) {
+    if(Array.isArray(inputArr)) {
+        var result = sumOfNumbers(inputArr);
+        return result/inputArr.length;
+    // } else {
+    //     throw 'calcAverage input must be an array of numbers';
+    }
+}
+function sumOfNumbers(input) {
+    var result = 0;
+    if(Array.isArray(input)) {
+        input.forEach(function(item, idx) {
+            result += item;
+        });
+    } else if(Number.isInteger(input)) {
+        for(var i  = 0 ; i <= input ; i++) {
+            result += i;
+        }
+    // } else {
+    //     throw 'sumOfNumbers input must be either anarray of numbers or an integer'
+    }
+    return result;
 }
 function isEven(input) {
     return input%2 === 0;
@@ -66,5 +89,7 @@ module.exports = {
     isInRange: isInRange,
     isInRangeEx: isInRangeEx,
     isInRangeMinInc: isInRangeMinInc,
-    isInRangeMaxInc: isInRangeMaxInc
+    isInRangeMaxInc: isInRangeMaxInc,
+    calcAverage: calcAverage,
+    sumOfNumbers: sumOfNumbers
 }
