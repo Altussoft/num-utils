@@ -4,8 +4,8 @@
 [![npm version](https://badge.fury.io/js/num-utils.svg)](https://badge.fury.io/js/num-utils)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/num-utils.svg)](https://www.npmjs.com/package/num-utils)
 [![node](https://img.shields.io/node/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
-[![npm](https://img.shields.io/npm/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
-<!-- [![npm](https://img.shields.io/npm/dt/num-utils.svg)](https://www.npmjs.com/package/num-utils) -->
+<!-- [![npm](https://img.shields.io/npm/v/num-utils.svg)](https://www.npmjs.com/package/num-utils) -->
+[![npm](https://img.shields.io/npm/dt/num-utils.svg)](https://www.npmjs.com/package/num-utils)
 <!--[![GitHub release](https://img.shields.io/github/release/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/releases/) -->
 [![GitHub contributors](https://img.shields.io/github/contributors/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/graphs/contributors/)
 [![GitHub issues](https://img.shields.io/github/issues/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues/)
