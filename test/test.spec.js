@@ -135,4 +135,18 @@ describe('#num-utils', function() {
         var result = nu.sumOfCubes([1, 2, 3, 4]);
         expect(result).to.equal(100);
     });
+    it('should return a ascending sorted array from a given number of inputs or given array', function() {
+        var result = nu.sortAsc(23, 8, 12, 54);
+        expect(result).to.deep.equal([ 8, 12,23, 54 ]);
+
+        var result = nu.sortAsc([23, 8, 12, 54]);
+        expect(result).to.deep.equal([ 8, 12,23, 54 ]);
+    });
+    it('should return a descending sorted array from a given number of inputs or given array', function() {
+        var result = nu.sortDesc(23, 8, 12, 54);
+        expect(result).to.deep.equal([ 54, 23, 12, 8 ]);
+
+        var result = nu.sortDesc([23, 8, 12, 54]);
+        expect(result).to.deep.equal([ 54, 23, 12, 8 ]);
+    });
 });

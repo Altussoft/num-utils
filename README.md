@@ -5,14 +5,12 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/num-utils.svg)](https://www.npmjs.com/package/num-utils)
 [![node](https://img.shields.io/node/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
 [![npm](https://img.shields.io/npm/v/num-utils.svg)](https://www.npmjs.com/package/num-utils)
-[![npm](https://img.shields.io/npm/dt/num-utils.svg)](https://www.npmjs.com/package/num-utils)
+<!-- [![npm](https://img.shields.io/npm/dt/num-utils.svg)](https://www.npmjs.com/package/num-utils) -->
 <!--[![GitHub release](https://img.shields.io/github/release/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/releases/) -->
 [![GitHub contributors](https://img.shields.io/github/contributors/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/graphs/contributors/)
 [![GitHub issues](https://img.shields.io/github/issues/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/akbeeram/num-utils.svg)](https://GitHub.com/akbeeram/num-utils/pull/)
-<!--
-[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)](https://github.com/akbeeram/num-utils)-->
 
 # num-utils
 
@@ -55,10 +53,16 @@ A small and simple library for number utility functions
     nu.sumOfNumbers([1,2,3,4]); // => 10
     nu.sumOfNumbers(5,10); // => 45
     nu.calcAverage([1,2,3,4,5]); // => 3
-    
+
     nu.sumOfSquares(2, 3, 4); // => 29
     nu.sumOfSquares([1, 2, 3, 4]); // => 30
     nu.sumOfCubes(2, 3, 4); // => 99
+```
+**Sorting**
+
+```javascript
+    nu.sortAsc(23, 8, 12, 54); // => [ 8, 12,23, 54 ]
+    nu.sortDesc([23, 8, 12, 54]); // => [ 54, 23, 12, 8 ]
 ```
 
 **Other Calculation Functions**
@@ -67,6 +71,7 @@ A small and simple library for number utility functions
     nu.isPythagoreanTriplets(6, 8 ,10); // => true
     nu.hasIntSquareRoot(20); // => false
 ```
+
 ## Tests
 
     npm test

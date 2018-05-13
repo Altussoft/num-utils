@@ -130,6 +130,36 @@ function sumOfCubes(inputArr) {
     }
     return result;
 }
+function sortAsc(input) {
+    var temp = [];
+    if(arguments.length === 1 && Array.isArray(input)) {
+        temp = sortArr(input);
+    } else {
+        var args = arguments;
+        temp = sortArr(Array.from(args));
+    }
+    function sortArr(arr) {
+        return arr.sort(function(a, b) {
+            return a - b;
+        });
+    }
+    return temp;
+}
+function sortDesc(input) {
+    var temp = [];
+    if(arguments.length === 1 && Array.isArray(input)) {
+        temp = sortArr(input);
+    } else {
+        var args = arguments;
+        temp = sortArr(Array.from(args));
+    }
+    function sortArr(arr) {
+        return arr.sort(function(a, b) {
+            return b - a;
+        });
+    }
+    return temp;
+}
 module.exports = {
     isEven: isEven,
     isOdd: isOdd,
@@ -150,5 +180,7 @@ module.exports = {
     isPythagoreanTriplets: isPythagoreanTriplets,
     hasIntSquareRoot: hasIntSquareRoot,
     sumOfSquares: sumOfSquares,
-    sumOfCubes: sumOfCubes
+    sumOfCubes: sumOfCubes,
+    sortAsc: sortAsc,
+    sortDesc: sortDesc
 }
