@@ -25,6 +25,9 @@ function isInRangeMinInc(input, min, max) {
 function isInRangeMaxInc(input, min, max) {
     return input <= max && input > min;
 }
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 function calcAverage(inputArr) {
     if(Array.isArray(inputArr)) {
         var result = sumOfNumbers(inputArr);
@@ -95,6 +98,38 @@ function isDivisibleBy5(input) {
 function isDivisibleBy(input, num) {
     return input%num === 0;
 }
+function sumOfSquares(inputArr) {
+    var args = arguments;
+    var result = 0;
+    //if an array
+    if(args.length === 1) {
+        inputArr.forEach(getSquares);
+    } else {
+        for(var i=0; i<args.length; i++){
+            getSquares(args[i]);
+        }
+    }
+    function getSquares(item) {
+        result += Math.pow(item, 2);
+    }
+    return result;
+}
+function sumOfCubes(inputArr) {
+    var args = arguments;
+    var result = 0;
+    //if an array
+    if(args.length === 1) {
+        inputArr.forEach(getCubes);
+    } else {
+        for(var i=0; i<args.length; i++){
+            getCubes(args[i]);
+        }
+    }
+    function getCubes(item) {
+        result += Math.pow(item, 3);
+    }
+    return result;
+}
 module.exports = {
     isEven: isEven,
     isOdd: isOdd,
@@ -109,8 +144,11 @@ module.exports = {
     isInRangeEx: isInRangeEx,
     isInRangeMinInc: isInRangeMinInc,
     isInRangeMaxInc: isInRangeMaxInc,
+    getRandomInRange: getRandomInRange,
     calcAverage: calcAverage,
     sumOfNumbers: sumOfNumbers,
     isPythagoreanTriplets: isPythagoreanTriplets,
-    hasIntSquareRoot: hasIntSquareRoot
+    hasIntSquareRoot: hasIntSquareRoot,
+    sumOfSquares: sumOfSquares,
+    sumOfCubes: sumOfCubes
 }

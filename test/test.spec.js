@@ -83,6 +83,11 @@ describe('#num-utils', function() {
         var result = nu.isInRangeMaxInc(2, 2, 10);
         expect(result).to.be.false;
     });
+    it('should return a random integer from the given range', function() {
+        var result = nu.getRandomInRange(10, 20);
+        expect(result).to.be.above(9);
+        expect(result).to.be.below(21);
+    });
     it('should calculate the average from a given array of numbers', function() {
         var input = [1,2,3,4,5,6,7,8,9,10];
         var result = nu.calcAverage(input);
@@ -115,5 +120,19 @@ describe('#num-utils', function() {
 
         var result = nu.hasIntSquareRoot(20);
         expect(result).to.be.false;
+    });
+    it('should return the sum of suqares of number in array provided or all the numbers provided', function() {
+        var result = nu.sumOfSquares(2, 3, 4);
+        expect(result).to.equal(29);
+
+        var result = nu.sumOfSquares([1, 2, 3, 4]);
+        expect(result).to.equal(30);
+    });
+    it('should return the sum of cubes of number in array provided or all the numbers provided', function() {
+        var result = nu.sumOfCubes(2, 3, 4);
+        expect(result).to.equal(99);
+
+        var result = nu.sumOfCubes([1, 2, 3, 4]);
+        expect(result).to.equal(100);
     });
 });

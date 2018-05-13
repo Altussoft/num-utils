@@ -44,6 +44,7 @@ A small and simple library for number utility functions
 ```javascript
     nu.isInRange(10, 2, 23); // => true
     nu.isInRangeMinInc(4, 4, 9); // => true
+    nu.getRandomInRange(10, 20); // => 14
 ```
 
 **Mathematical Functions**
