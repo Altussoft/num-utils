@@ -104,8 +104,30 @@ describe('#num-utils', function() {
         result = nu.sumOfNumbers(5);
         expect(result).to.equal(15);
 
-        result = nu.sumOfNumbers(5,10);
-        expect(result).to.equal(45);
+        result = nu.sumOfNumbers(5,10, 12 , 13);
+        expect(result).to.equal(40);
+    });
+    it('should calculate sum of numbers between two given numbers', function() {
+        var result = nu.sumOfNumbersBetween(2, 5);
+        expect(result).to.equal(9);
+
+        result = nu.sumOfNumbersBetween(2, null);
+        expect(result).to.equal(2);
+        result = nu.sumOfNumbersBetween(null, 5);
+        expect(result).to.equal(5);
+        result = nu.sumOfNumbersBetween(null, null);
+        expect(result).to.equal(0);
+    });
+    it('should calculate sum of numbers between two given numbers including the given numbers', function() {
+        var result = nu.sumOfNumbersFrom(2, 5);
+        expect(result).to.equal(14);
+        
+        result = nu.sumOfNumbersFrom(2, null);
+        expect(result).to.equal(2);
+        result = nu.sumOfNumbersFrom(null, 5);
+        expect(result).to.equal(5);
+        result = nu.sumOfNumbersFrom(null, null);
+        expect(result).to.equal(0);
     });
     it('should identify if a given set of 3 numbers are Pythagorean Triplets', function() {
         var result = nu.isPythagoreanTriplets(6, 8 ,10);

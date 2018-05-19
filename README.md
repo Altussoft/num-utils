@@ -50,9 +50,12 @@ A small and simple library for number utility functions
 ```javascript
     nu.sumOfNumbers(5); // => 15
     nu.sumOfNumbers([1,2,3,4]); // => 10
-    nu.sumOfNumbers(5,10); // => 45
+    nu.sumOfNumbers(5,10); // => 15, any number of arguments
     nu.calcAverage([1,2,3,4,5]); // => 3
 
+    nu.sumOfNumbersBetween(2, 5); // => 9, does not include 2,5
+    nu.sumOfNumbersFrom(2, 5); // => 14, including 2 and 5
+    
     nu.sumOfSquares(2, 3, 4); // => 29
     nu.sumOfSquares([1, 2, 3, 4]); // => 30
     nu.sumOfCubes(2, 3, 4); // => 99
